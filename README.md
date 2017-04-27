@@ -6,6 +6,22 @@ This demo is a employees management system build by following official Angular 2
 npm install
 npm start
 ```
+### If you meet these errors when you run  `npm start`
+```
+error This is most likely a problem with the angular2-quickstart package,
+error not with npm itself.
+error Tell the author that this fails on your system:
+error     concurrent "npm run tsc:w" "npm run lite"
+error You can get their info via:
+error     npm owner ls angular2-quickstart
+```
+Update your dependencies at package.json.
+Check more help info [here](https://stackoverflow.com/questions/34335340/angular2-quickstart-npm-start-is-not-working-correctly).
+
+Change the `start` field in package.json
+```
+"start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+```
 
 ### In this system, user can use the dashboard to:
   - check who're the outstanding employees this month;
