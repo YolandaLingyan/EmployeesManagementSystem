@@ -8,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var http_1 = require("@angular/http");
 var EmployeeSearchService = (function () {
     function EmployeeSearchService(http) {
         this.http = http;
@@ -19,11 +20,11 @@ var EmployeeSearchService = (function () {
             .get("app/employees/?name=" + term)
             .map(function (r) { return r.json().data; });
     };
-    EmployeeSearchService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], EmployeeSearchService);
     return EmployeeSearchService;
 }());
+EmployeeSearchService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], EmployeeSearchService);
 exports.EmployeeSearchService = EmployeeSearchService;
 //# sourceMappingURL=employee-search.service.js.map

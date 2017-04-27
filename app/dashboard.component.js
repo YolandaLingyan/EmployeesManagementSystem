@@ -8,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var employee_service_1 = require('./employee.service');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var employee_service_1 = require("./employee.service");
 var DashboardComponent = (function () {
     // EmployeeService 注入构造函数中，并且把它保存在一个私有的 employeeService 字段中。
     function DashboardComponent(employeeService) {
@@ -23,16 +24,16 @@ var DashboardComponent = (function () {
         this.employeeService.getEmployees()
             .then(function (employees) { return _this.employees = employees.slice(2, 4); });
     };
-    DashboardComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'my-dashboard',
-            templateUrl: 'dashboard.component.html',
-            styleUrls: ['dashboard.component.css']
-        }), 
-        __metadata('design:paramtypes', [employee_service_1.EmployeeService])
-    ], DashboardComponent);
     return DashboardComponent;
 }());
+DashboardComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'my-dashboard',
+        templateUrl: 'dashboard.component.html',
+        styleUrls: ['dashboard.component.css']
+    }),
+    __metadata("design:paramtypes", [employee_service_1.EmployeeService])
+], DashboardComponent);
 exports.DashboardComponent = DashboardComponent;
 //# sourceMappingURL=dashboard.component.js.map

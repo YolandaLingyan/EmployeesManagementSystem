@@ -8,10 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var common_1 = require('@angular/common');
-var employee_service_1 = require('./employee.service');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var common_1 = require("@angular/common");
+var employee_service_1 = require("./employee.service");
 var EmployeeDetailComponent = (function () {
     function EmployeeDetailComponent(employeeService, route, location) {
         this.employeeService = employeeService;
@@ -34,16 +35,18 @@ var EmployeeDetailComponent = (function () {
     EmployeeDetailComponent.prototype.goBack = function () {
         this.location.back();
     };
-    EmployeeDetailComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'my-employee-detail',
-            templateUrl: 'employee-detail.component.html',
-            styleUrls: ['employee-detail.component.css']
-        }), 
-        __metadata('design:paramtypes', [employee_service_1.EmployeeService, router_1.ActivatedRoute, common_1.Location])
-    ], EmployeeDetailComponent);
     return EmployeeDetailComponent;
 }());
+EmployeeDetailComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'my-employee-detail',
+        templateUrl: 'employee-detail.component.html',
+        styleUrls: ['employee-detail.component.css']
+    }),
+    __metadata("design:paramtypes", [employee_service_1.EmployeeService,
+        router_1.ActivatedRoute,
+        common_1.Location])
+], EmployeeDetailComponent);
 exports.EmployeeDetailComponent = EmployeeDetailComponent;
 //# sourceMappingURL=employee-detail.component.js.map

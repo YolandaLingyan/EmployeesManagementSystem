@@ -8,11 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var Observable_1 = require('rxjs/Observable');
-var Subject_1 = require('rxjs/Subject');
-var employee_search_service_1 = require('./employee-search.service');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var Observable_1 = require("rxjs/Observable");
+var Subject_1 = require("rxjs/Subject");
+var employee_search_service_1 = require("./employee-search.service");
 var EmployeeSearchComponent = (function () {
     function EmployeeSearchComponent(employeeSearchService, router) {
         this.employeeSearchService = employeeSearchService;
@@ -41,17 +42,18 @@ var EmployeeSearchComponent = (function () {
         var link = ['/detail', employee.id];
         this.router.navigate(link);
     };
-    EmployeeSearchComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'employee-search',
-            templateUrl: 'employee-search.component.html',
-            styleUrls: ['employee-search.component.css'],
-            providers: [employee_search_service_1.EmployeeSearchService]
-        }), 
-        __metadata('design:paramtypes', [employee_search_service_1.EmployeeSearchService, router_1.Router])
-    ], EmployeeSearchComponent);
     return EmployeeSearchComponent;
 }());
+EmployeeSearchComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'employee-search',
+        templateUrl: 'employee-search.component.html',
+        styleUrls: ['employee-search.component.css'],
+        providers: [employee_search_service_1.EmployeeSearchService]
+    }),
+    __metadata("design:paramtypes", [employee_search_service_1.EmployeeSearchService,
+        router_1.Router])
+], EmployeeSearchComponent);
 exports.EmployeeSearchComponent = EmployeeSearchComponent;
 //# sourceMappingURL=employee-search.component.js.map
