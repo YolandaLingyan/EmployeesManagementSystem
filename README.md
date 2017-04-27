@@ -7,7 +7,7 @@ npm install
 npm start
 ```
 
-In this system, user can use the dashboard to:
+### In this system, user can use the dashboard to:
   - check who're the outstanding employees this month;
     - search employee by name;
   - access all the employees information:
@@ -16,7 +16,7 @@ In this system, user can use the dashboard to:
     - edit the employee's info (can only change the employee's name now)
   - edit the recruiting info.
 
-Something wait for implementation:
+### Something wait for implementation:
   - edit the details of employee (for example worktime, salary, positon);
   - add more search methods (use "search by name" now) like search by id, position, salary etc;
   - add content to the recruit branch
