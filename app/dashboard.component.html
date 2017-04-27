@@ -1,0 +1,14 @@
+<h3>Outstanding employees for this month are: </h3>
+<div> 
+    <p> Congratulations for this honor, you could get 10% more of your salary as reward! </p>
+</div>
+
+<div class="grid grid-pad">
+  <a *ngFor="let employee of employees" [routerLink]="['/detail', employee.id]" class="col-1-4">
+    <div class="module employee">
+      <h4>{{employee.name}}</h4>
+    </div>
+  </a>
+</div>
+<br><br><br><br><br>
+<employee-search></employee-search>
