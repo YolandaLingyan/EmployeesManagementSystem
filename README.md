@@ -1,5 +1,11 @@
-# employees-management-system
-this demo is a first try of Angular by following official tutorial "TourOfHeroes".
+# Employees Management System
+This demo is a employees management system build by following official Angular 2 tutorial "TourOfHeroes".
+
+## Run this project locally
+```
+npm install
+npm start
+```
 
 In this system, user can use the dashboard to:
   - check who're the outstanding employees this month;
@@ -10,7 +16,7 @@ In this system, user can use the dashboard to:
     - edit the employee's info (can only change the employee's name now)
   - edit the recruiting info.
 
-something wait for implementation:
+Something wait for implementation:
   - edit the details of employee (for example worktime, salary, positon);
   - add more search methods (use "search by name" now) like search by id, position, salary etc;
   - add content to the recruit branch
